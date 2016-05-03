@@ -11,7 +11,7 @@ var str :String = "i am a sting"
 let f: Float?
 let b:Bool = true
 var g:UInt64=123456
-// the \(str) variable inside the sting should not be highlighted
+// the \(str) variable inside the string should not be highlighted
 print(players)
 print(players.count)
 print("print a String \(str).")
