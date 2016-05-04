@@ -41,6 +41,7 @@ func isNotZero(aUInt8var: UInt8) -> Bool{
   var b: UInt8 = 0b11110000
   print(~a == b); print(a & b == 0); print(a | b == 0b11111111); print(a ^ b == a | b)
   print(true && false); print(true || false); print(!true); print("swift" + "lang")
+  print(a << 1 == 0b00011110); print(a >> 1 == 0b00000111)
 }
 // Struct and Enums
 struct Video{
@@ -52,5 +53,8 @@ struct Video{
 enum Numbers: Int {
     case One = 1, Two, Three, Four, Five
 }
+
+// classes and functions
 extension Int {}; class Genre{}; protocol Vase{ typealias Plant }; @objc protocol Time {};
-convenience init(){}; override func toString() -> String {};
+convenience init(){}; override func toString() -> String {}; prefix func - () -> String {};
+postfix operator -=- {}; postfix func -=- () -> Int {}; 
