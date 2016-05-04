@@ -17,6 +17,7 @@ print(players.count)
 print("print a String \(str).")
 /// aUInt8var is a variable name and should not be highlighted.
 func isNotZero(aUInt8var: UInt8) -> Bool{
+  // conditionals and loops
   if aUInt8var == 0 {
     return false
   }else{
@@ -35,7 +36,13 @@ func isNotZero(aUInt8var: UInt8) -> Bool{
       print("less than 1")
   }
   for index in 1..<5 { print(index) }
+  // Operators and Bitwise Operators
+  var a: UInt8 = 0b00001111
+  var b: UInt8 = 0b11110000
+  print(~a == b); print(a & b == 0); print(a | b == 0b11111111); print(a ^ b == a | b)
+  print(true && false); print(true || false); print(!true); print("swift" + "lang")
 }
+// Struct and Enums
 struct Video{
   static var title: String
   weak var stars: Int
