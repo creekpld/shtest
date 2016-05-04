@@ -42,5 +42,8 @@ struct Video{
   mutating func addStars (newVal: Int){
   }
 }
+enum Numbers: Int {
+    case One = 1, Two, Three, Four, Five
+}
 extension Int {}; class Genre{}; protocol Vase{ typealias Plant }; @objc protocol Time {};
 convenience init(){}; override func toString() -> String {};
