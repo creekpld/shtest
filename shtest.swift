@@ -22,6 +22,18 @@ func isNotZero(aUInt8var: UInt8) -> Bool{
   }else{
     return true
   }
+  switch i {
+  case 1:
+      print("one")
+  case 2:
+      print("two")
+  case 3, 4:
+      print("three or four")
+  case _ where i > 5:
+      print("greater than 5")
+  default:
+      print("less than 1")
+  }
 }
 struct Video{
   static var title: String
