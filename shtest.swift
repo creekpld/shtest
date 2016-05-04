@@ -34,6 +34,7 @@ func isNotZero(aUInt8var: UInt8) -> Bool{
   default:
       print("less than 1")
   }
+  for index in 1..<5 { print(index) }
 }
 struct Video{
   static var title: String
