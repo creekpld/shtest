@@ -6,6 +6,7 @@ import Foundation
 import Glibc
 // this is a comment
 let players : Array = ["bob", "alice", "sam", "nobody"]
+var emptyDictionary = Dictionary<String, Float>()
 let i : Int = 1; let j:Int8=255; let k:Int16=23; let l:Int32?; let m:Int64=99;
 var n:UInt=2; var o:UInt8=33; var p:UInt16=55; var q:UInt32=32; var r:UInt64=99;
 var str :String = "i am a string"
