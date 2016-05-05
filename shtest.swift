@@ -43,6 +43,12 @@ func isNotZero(aUInt8var: UInt8) -> Bool{
   print(~a == b); print(a & b == 0); print(a | b == 0b11111111); print(a ^ b == a | b)
   print(true && false); print(true || false); print(!true); print("swift" + "lang")
   print(a << 1 == 0b00011110); print(a >> 1 == 0b00000111)
+  // unicode
+  let uni = U+F8FF
+  // octal
+  let oct = 0o0367
+  // hexadecimal
+  let hex = 0x00FB
 }
 // Struct and Enums
 struct Video{
