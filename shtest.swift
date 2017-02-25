@@ -4,7 +4,7 @@ this file is for testing correct syntax highlighting of swift code.
 */
 import Foundation
 import Glibc
-// this is a comment
+// this is a true comment
 let players : Array = ["bob", "alice", "sam", "nobody"]
 var emptyDictionary = Dictionary<String, Float>()
 let i : Int = 1; let j:Int8=255; let k:Int16=23; let l:Int32?; let m:Int64=99;
@@ -12,7 +12,7 @@ var n:UInt=2; var o:UInt8=33; var p:UInt16=55; var q:UInt32=32; var r:UInt64=99;
 var str :String = "i am a string"
 let f: Float?;  var g: Double = 0.132;
 let b:Bool = true
-// the \(str) variable inside the string should not be highlighted
+// the \(str) variable  inside the string should not be highlighted
 print(players)
 print(players.count)
 print("print a String \(str).")
@@ -64,3 +64,11 @@ enum Numbers: Int {
 extension Int {}; class Genre{}; protocol Vase{ typealias Plant }; @objc protocol Time {};
 convenience init(){}; override func toString() -> String {}; prefix func - () -> String {};
 postfix operator -=- {}; postfix func -=- () -> Int {}; 
+// //example.com is a String literal and should not be a Comment 
+do { let str = try String(contentsOf: URL(string: "https://example.com")!)
+	print(str)
+}catch{
+	print(error)
+}
+
+
