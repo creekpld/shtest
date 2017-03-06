@@ -4,7 +4,7 @@ this file is for testing correct syntax highlighting of swift code.
 */
 import Foundation
 import Glibc
-// this is a true comment
+// this is a true comment :)
 let players : Array = ["bob", "alice", "sam", "nobody"]
 var emptyDictionary = Dictionary<String, Float>()
 let i : Int = 1; let j:Int8=255; let k:Int16=23; let l:Int32?; let m:Int64=99;
@@ -50,7 +50,7 @@ func isNotZero(aUInt8var: UInt8) -> Bool{
   // hexadecimal
   let hex = 0x00FB
 }
-// Struct and Enums
+// Struct and Enums 
 struct Video{
   static var title: String
   weak var stars: Int
